@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Sanchit Pahurkar</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="../output.css">
+
+    <!-- inter fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter">
+    <nav class="p-5 bg-white dark:bg-[#161616] dark:text-white md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center ">
+        <span class="text-xl font-bold cursor-pointer">
+          <a href="../index.html">Sanchit Pahurkar</a>
+        </span>
+  
+        <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+        </span>
+      </div>
+  
+      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[-1] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+        <a href="projects.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Projects</a>
+        <a href="certifications.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Certifications</a>
+        <a href="about.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">About</a>
+        <a href="contact.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Contact</a> 
+      </div>
+    </nav>
+  
+  
+    <script src="../script.js"></script>
+  </body>
+</html>

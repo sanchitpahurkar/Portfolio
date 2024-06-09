@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-inter">
+<body class="font-inter dark:bg-[#161616]">
     <nav class="p-5 bg-white dark:bg-[#161616] dark:text-white md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center ">
         <span class="text-xl font-bold cursor-pointer">
@@ -32,8 +32,132 @@
         <a href="about.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">About</a>
         <a href="contact.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Contact</a> 
       </div>
+
+      <!-- <div class="dark:bg-[#161616]">
+        <button id="theme-toggle" class="px-2 py-2 text-white bg-gray-100 dark:bg-gray-800 rounded-lg mr-2"><img src="../media/theme.png" class="h-6" alt=""></button>
+        <div id="theme-options" class="hidden mt-2">
+          <button data-theme="light" class="px-4 py-2 bg-gray-200 rounded m-1">Light</button>
+          <button data-theme="dark" class="px-4 py-2 bg-gray-800 text-white rounded m-1">Dark</button>
+          <button data-theme="system" class="px-4 py-2 bg-gray-400 rounded m-1">System</button>
+        </div>
+      </div> -->
     </nav>
+
+    <!-- projects starts -->
+    <section class="dark:text-white">
+      <!-- container -->
+      <div class="flex flex-col justify-center items-center">
+        <!-- heading -->
+        <div class="flex flex-col pt-8 gap-y-2 
+        animate-bounce animate-infinite animate-duration-[2000ms] animate-delay-500 animate-ease-in-out">
+          <h1 class="text-4xl font-bold">Projects</h1>
+          <p class="text-sm text-gray-600 dark:text-gray-400">These are my projects</p>
+        </div>
+        <!-- cards -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 py-12">
+          <!-- project 1 -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/travel.jpg" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">Had Travel</p>
+              <p class="text-sm text-gray-600 dark:text-gray-400">HTML | TailwindCSS | JS</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/rohitgargRG/Travel_website_Project" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href=""><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/YT.png" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">Youtube Landing Page Clone</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">HTML | TailwindCSS</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/sanchitpahurkar/YT-clone" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href=""><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/todo.png" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">ToDo List App</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">HTML | CSS | JS</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/sanchitpahurkar/ToDo-list-HTML-CSS-JS" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href="https://adorable-kringle-28faff.netlify.app/"><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- project 4 -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/cards.png" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">TailwindCSS cards</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">HTML | TailwindCSS</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/sanchitpahurkar/tailwindcss-cards" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href="https://tailwindcss-cards.netlify.app/" target="_blank"><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- project 5 -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/rock.png" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">Rock-Paper-Scissors</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">HTML | CSS | JS</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/sanchitpahurkar/rock-paper-scissors" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href="https://jsgame-rock-paper-scissors.netlify.app/" target="_blank"><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- project 6 -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/todoreact.png" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">ToDo List - React App</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">React</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/sanchitpahurkar/todolist-react.githib.io" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href="https://mytodolistapp-reactjs.netlify.app/" target="_blank"><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <!-- project 7  -->
+          <div class="flex flex-col rounded-md w-80 up">
+            <img src="../media/tailwind.png" class="w-80 rounded-md" alt="">
+            <div class="flex flex-row py-3 justify-between">
+              <div class="flex flex-col gap-2">
+                <p class="font-semibold">TailwindCSS landing page</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">HTML | TailwindCSS</p>
+              </div>
+              <div class="flex flex-row gap-4 px-3 items-center">
+                <a href="https://github.com/sanchitpahurkar/tailwindcss-landing-page" target="_blank"><img src="../media/github.png" class="h-6" alt=""></a>
+                <a href="https://tailwind-landing-pg.netlify.app/" target="_blank"><img src="../media/link.png" class="h-6" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   
+
     <!-- footer starts -->
     <footer class="flex flex-col md:flex-row justify-between pt-5 md:pt-10 bg-white dark:bg-white">
       <!-- name and socials -->
@@ -54,24 +178,26 @@
       <div class="flex flex-row gap-20 mx-8">
           <!-- links 1 -->
           <div class="flex flex-col">
-              <p class="font-semibold mb-4">Topic</p>
-              <p class="mb-2">Page</p>
-              <p class="mb-2">Page</p>
-              <p class="mb-2">Page</p>
+              <p class="font-semibold mb-4">Code Profiles</p>
+              <a href="https://leetcode.com/u/sanchit_pahurkar/"><p class="mb-2">LeetCode</p></a>
+              <a href="https://www.codechef.com/users/sanchit_p23"><p class="mb-2">Page</p></a>
+              <a href="https://codeforces.com/profile/sanchit.pahurkar"><p class="mb-2">Page</p></a>
           </div>
           <!-- links 2 -->
           <div class="flex flex-col">
-              <p class="font-semibold mb-4">Topic</p>
-              <p class="mb-2">Page</p>
-              <p class="mb-2">Page</p>
-              <p class="mb-2">Page</p>
+              <p class="font-semibold mb-4">Socials</p>
+              <a href="https://github.com/sanchitpahurkar"><p class="mb-2">Github</p></a>
+              <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><p class="mb-2">LinkedIn</p></a>
+              <a href="https://www.instagram.com/sanchit_p23/"><p class="mb-2">Instagram</p></a>
+              <a href="https://x.com/PahurkarSanchit"><p class="mb-2">Twitter</p></a>
           </div>
           <!-- link 3 -->
           <div class="flex flex-col">
-              <p class="font-semibold mb-4">Topic</p>
-              <p class="mb-2">Page</p>
-              <p class="mb-2">Page</p>
-              <p class="mb-2">Page</p>
+              <p class="font-semibold mb-4">Community</p>
+              <a href="https://sanchitpahurkar.hashnode.dev/"><p class="mb-2">Hashnode</p></a>
+              <a href="https://medium.com/"><p class="mb-2">Medium</p></a>
+              <a href="https://medial.app/"><p class="mb-2">Medial</p></a>
+              <a href="https://www.bluelearn.in/community"><p class="mb-2">BlueLearn</p></a>
           </div>
       </div>
     </footer>

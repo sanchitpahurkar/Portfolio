@@ -55,3 +55,49 @@ Email.send({
         + "<br>Message : " + document.getElementById('msg').value
 }).then(message => alert("Message sent successfully")
 );
+
+
+// theme toggle
+
+
+// document.addEventListener('DOMContentLoaded', function () {
+//   const themeToggle = document.getElementById('theme-toggle');
+//   const themeOptions = document.getElementById('theme-options');
+//   const themeButtons = themeOptions.querySelectorAll('button[data-theme]');
+  
+//   const applyTheme = (theme) => {
+//     if (theme === 'system') {
+//       document.documentElement.classList.remove('dark');
+//       if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//         document.documentElement.classList.add('dark');
+//       }
+//     } else if (theme === 'dark') {
+//       document.documentElement.classList.add('dark');
+//     } else {
+//       document.documentElement.classList.remove('dark');
+//     }
+//     localStorage.setItem('theme', theme);
+//   };
+
+//   const savedTheme = localStorage.getItem('theme') || 'system';
+//   applyTheme(savedTheme);
+
+//   themeToggle.addEventListener('click', () => {
+//     themeOptions.classList.toggle('hidden');
+//   });
+
+//   themeButtons.forEach(button => {
+//     button.addEventListener('click', (event) => {
+//       const selectedTheme = event.target.getAttribute('data-theme');
+//       applyTheme(selectedTheme);
+//       themeOptions.classList.add('hidden');
+//     });
+//   });
+
+//   // Listen to system theme changes
+//   window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+//     if (localStorage.getItem('theme') === 'system') {
+//       applyTheme('system');
+//     }
+//   });
+// });

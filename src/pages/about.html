@@ -7,13 +7,15 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../output.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
 
     <!-- inter fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-inter">
+<body class="font-inter dark:bg-[#161616]">
+    <!-- nav starts -->
     <nav class="p-5 bg-white dark:bg-[#161616] dark:text-white md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center ">
         <span class="text-xl font-bold cursor-pointer">
@@ -25,15 +27,83 @@
         </span>
       </div>
   
-      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[-1] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[10] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <a href="projects.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Projects</a>
         <a href="certifications.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Certifications</a>
         <a href="about.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">About</a>
         <a href="contact.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Contact</a> 
       </div>
     </nav>
+    <!-- nav ends -->
+
+    <!-- about starts -->
+    <section class="h-auto">
+      <!-- content container -->
+      <div class="flex flex-col md:flex-row items-center justify-center my-16 dark:text-white">
+        <!-- text -->
+        <div class="px-16 md:w-1/2 mb-4 about">
+          <h1 class="text-4xl font-bold">About</h1>
+          <p class="pr-8 mt-8">I am a computer-science student specializing in AI & ML from RBU, Nagpur, IN. I am passionate about exploring new technologies. I like to constantly learn new skills. Currently I am working with Data Structures and Algorithms and also a web frameworks.</p>
+          <div class="flex gap-3 mt-8">
+            <img src="../media/location.png" class="h-6" alt="">
+            <p class="font-semibold">Nagpur</p>
+          </div>
+          <p class="font-semibold mt-8">Connect with me :</p>
+          <div class="mt-3">
+            <a href="https://www.instagram.com/sanchit_p23/"><i class="fi fi-brands-instagram px-2 cursor-pointer"></i></a>
+            <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><i class="fi fi-brands-linkedin px-2 cursor-pointer"></i></a>
+            <a href="https://x.com/PahurkarSanchit"><i class="fi fi-brands-twitter px-2 cursor-pointer"></i></a>
+            <a href="https://github.com/sanchitpahurkar"><i class="fi fi-brands-github px-2 cursor-pointer"></i></a>
+          </div>
+        </div>
+        <!-- photo -->
+        <img src="../media/profile.png" class="animate-float h-[300px] w-[300px]" alt="">
+      </div>
+    </section>
   
-  
+    <!-- footer starts -->
+    <footer class="flex flex-col md:flex-row justify-between pt-5 md:pt-10 bg-white dark:bg-white">
+      <!-- name and socials -->
+       <div class="flex flex-col md:gap-20">
+          <!-- name -->
+          <div class="mx-5 my-4 md:m-4 font-semibold">
+              <p>Sanchit Pahurkar</p>
+          </div>
+          <!-- socials -->
+          <div class="mx-4 mb-8">
+              <a href="https://www.instagram.com/sanchit_p23/"><i class="fi fi-brands-instagram px-2 cursor-pointer"></i></a>
+              <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><i class="fi fi-brands-linkedin px-2 cursor-pointer"></i></a>
+              <a href="https://x.com/PahurkarSanchit"><i class="fi fi-brands-twitter px-2 cursor-pointer"></i></a>
+              <a href="https://github.com/sanchitpahurkar"><i class="fi fi-brands-github px-2 cursor-pointer"></i></a>
+          </div>
+       </div>
+      <!-- links -->
+      <div class="flex flex-row gap-20 mx-8">
+          <!-- links 1 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+          <!-- links 2 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+          <!-- link 3 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+      </div>
+   </footer>
+   <!-- footer ends -->
     <script src="../script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

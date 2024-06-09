@@ -7,13 +7,15 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../output.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="shortcut icon" href="../media/sign.png" type="image/x-icon">
 
     <!-- inter fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-inter">
+<body class="font-inter dark:bg-[#161616]">
     <nav class="p-5 bg-white dark:bg-[#161616] dark:text-white md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center ">
         <span class="text-xl font-bold cursor-pointer">
@@ -25,15 +27,131 @@
         </span>
       </div>
   
-      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[-1] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[10] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <a href="projects.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Projects</a>
         <a href="certifications.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Certifications</a>
         <a href="about.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">About</a>
         <a href="contact.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Contact</a> 
       </div>
     </nav>
+
+    <!-- certifications section -->
+     <section class="dark:text-white">
+      <!-- content container -->
+       <div class="flex flex-col items-center md:justify-normal">
+        <h1 class="text-4xl font-bold px-24 pt-10 
+        animate-bounce animate-infinite animate-duration-[2000ms] animate-delay-500 animate-ease-in-out">
+          Certifications
+        </h1>
+        <!-- certifications -->
+        <div class="flex flex-col justify-center items-center py-12 gap-y-5">
+          <!-- cert 1 -->
+          <div class="shadow-custom rounded p-3 w-3/4 flex flex-col md:flex-row items-center justify-between rht">
+            <div class="flex flex-row">
+              <img src="../media/edx.svg" class="w-10 h-10 rounded" alt="">
+              <!-- certificate name and org -->
+              <div class="flex flex-col px-3">
+                <h3 class="text-lg font-semibold">Web Development with HTML5, CSS3, & JS</h3>
+                <p class="text-sm text-gray-600">EdX</p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between md:justify-center gap-4">
+              <p class="text-gray-500">May 11, 2024</p>
+              <a href="https://drive.google.com/file/d/1efq6uEltlG2T--5kaylQkoNYwuVDN4OC/view?usp=sharing"><button class="px-3 py-1 rounded bg-black text-white mr-2">View</button></a>
+            </div>
+          </div>
+          <!-- cert 2 -->
+          <div class="shadow-custom rounded p-3 w-3/4 flex flex-col md:flex-row items-center justify-between lft">
+            <div class="flex flex-row">
+              <img src="../media/coursera.png" class="w-10 h-10 rounded" alt="">
+              <!-- certificate name and org -->
+              <div class="flex flex-col px-3">
+                <h3 class="text-lg font-semibold">Python for Data Science, AI & Development</h3>
+                <p class="text-sm text-gray-600">Coursera</p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between md:justify-center gap-4">
+              <p class="text-gray-500">July 19, 2023</p>
+              <a href="https://drive.google.com/file/d/1lxLqk80L3-iGQn0O4SwHsN8VRQ8GO-oc/view?usp=drive_link"><button class="px-3 py-1 rounded bg-black text-white mr-2">View</button></a>
+            </div>
+          </div>
+          <!-- cert 3 -->
+          <div class="shadow-custom rounded p-3 w-3/4 flex flex-col md:flex-row items-center justify-between rht">
+            <div class="flex flex-row">
+              <img src="../media/edx.svg" class="w-10 h-10 rounded" alt="">
+              <!-- certificate name and org -->
+              <div class="flex flex-col px-3">
+                <h3 class="text-lg font-semibold">Blockchain: Understanding Its Uses and Implications</h3>
+                <p class="text-sm text-gray-600">EdX</p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between md:justify-center gap-4">
+              <p class="text-gray-500">December 19, 2023</p>
+              <a href="https://drive.google.com/file/d/1Fv_IwsV2oVUoabk3LgMQgF9fx9Ox7IXq/view?usp=sharing"><button  class="px-3 py-1 rounded bg-black text-white mr-2">View</button></a>
+            </div>
+          </div>
+          <!-- cert 4 -->
+          <div class="shadow-custom rounded p-3 w-3/4 flex flex-col md:flex-row items-center justify-between lft">
+            <div class="flex flex-row">
+              <img src="../media/365.png" class="w-10 h-10 rounded" alt="">
+              <!-- certificate name and org -->
+              <div class="flex flex-col px-3">
+                <h3 class="text-lg font-semibold">Git and GitHub - 365 Data Science</h3>
+                <p class="text-sm text-gray-600">365DataScience</p>
+              </div>
+            </div>
+            <div class="flex flex-row items-center justify-between md:justify-center gap-4">
+              <p class="text-gray-500">November 16, 2022</p>
+              <a href="https://drive.google.com/file/d/17lOgUgLfG5GQ2mRyngWabsUOWX-EmeQi/view?usp=drive_link"><button class="px-3 py-1 rounded bg-black text-white mr-2">View</button></a>
+            </div>
+          </div>
+        </div>
+       </div>
+     </section>
   
-  
+    <!-- footer starts -->
+    <footer class="flex flex-col md:flex-row justify-between pt-5 md:pt-10 bg-white dark:bg-white">
+      <!-- name and socials -->
+       <div class="flex flex-col md:gap-20">
+          <!-- name -->
+          <div class="mx-5 my-4 md:m-4 font-semibold">
+              <p>Sanchit Pahurkar</p>
+          </div>
+          <!-- socials -->
+          <div class="mx-4 mb-8">
+              <a href="https://www.instagram.com/sanchit_p23/"><i class="fi fi-brands-instagram px-2 cursor-pointer"></i></a>
+              <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><i class="fi fi-brands-linkedin px-2 cursor-pointer"></i></a>
+              <a href="https://x.com/PahurkarSanchit"><i class="fi fi-brands-twitter px-2 cursor-pointer"></i></a>
+              <a href="https://github.com/sanchitpahurkar"><i class="fi fi-brands-github px-2 cursor-pointer"></i></a>
+          </div>
+       </div>
+      <!-- links -->
+      <div class="flex flex-row gap-20 mx-8">
+          <!-- links 1 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+          <!-- links 2 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+          <!-- link 3 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
     <script src="../script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

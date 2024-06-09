@@ -7,6 +7,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="output.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
 
     <!-- inter fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body class="font-inter">
+    <!-- nav starts -->
     <nav class="p-5 bg-white dark:bg-[#161616] dark:text-white md:flex md:items-center md:justify-between">
-      <div class="flex justify-between items-center ">
+      <div class="flex justify-between items-center">
         <span class="text-xl font-bold cursor-pointer">
           <a href="index.html">Sanchit Pahurkar</a>
         </span>
@@ -25,15 +27,87 @@
         </span>
       </div>
   
-      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[-1] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[10] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <a href="pages/projects.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Projects</a>
         <a href="pages/certifications.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Certifications</a>
         <a href="pages/about.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">About</a>
         <a href="pages/contact.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Contact</a> 
       </div>
     </nav>
+    <!-- nav ends -->
   
-  
+    <!-- hero starts -->
+    <section class="flex flex-col dark:bg-[#161616]">
+        <!-- greeting -->
+         <div class="flex flex-col gap-2 px-12 py-12 my-2 md:justify-center md:items-center
+         animate-wiggle animate-infinite animate-duration-[3500ms] animate-delay-500 animate-ease-in-out dark:text-white">
+            <h1 class="text-4xl font-bold">Hello World! 👋</h1>
+            <p class="">I am a Developer.</p>
+        </div>
+        <!-- top projects section -->
+        <div class="flex flex-col px-12">
+            <h1 class="text-3xl font-bold dark:text-white">Top Projects</h1>
+            <!-- cards -->
+            <div class="flex flex-wrap justify-center items-center">
+                <!-- card 1 -->
+                <div class="w-40 sm:w-48 md:w-60 h-60 sm:h-72 md:h-80 bg-gray-400 overflow-hidden shadow-2xl">
+                    <!-- img -->
+                    <div class=" h-[150px] bg-slate-100">
+                        Test
+                    </div>
+                    <!-- description -->
+                    <div class="flex flex-col">
+                        <h3 class="mx-4 my-3 font-semibold">Travel Website</h3>
+                        <p class="text-xs mx-4 font-medium">Tech Stack Used : HTML, TailwindCSS, JaaScript</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer starts -->
+    <footer class="flex flex-col md:flex-row justify-between pt-5 md:pt-10 bg-white dark:bg-white">
+        <!-- name and socials -->
+         <div class="flex flex-col md:gap-20">
+            <!-- name -->
+            <div class="mx-5 my-4 md:m-4 font-semibold">
+                <p>Sanchit Pahurkar</p>
+            </div>
+            <!-- socials -->
+            <div class="mx-4 mb-8">
+                <a href="https://www.instagram.com/sanchit_p23/"><i class="fi fi-brands-instagram px-2 cursor-pointer"></i></a>
+                <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><i class="fi fi-brands-linkedin px-2 cursor-pointer"></i></a>
+                <a href="https://x.com/PahurkarSanchit"><i class="fi fi-brands-twitter px-2 cursor-pointer"></i></a>
+                <a href="https://github.com/sanchitpahurkar"><i class="fi fi-brands-github px-2 cursor-pointer"></i></a>
+            </div>
+         </div>
+        <!-- links -->
+        <div class="flex flex-row gap-20 mx-8">
+            <!-- links 1 -->
+            <div class="flex flex-col">
+                <p class="font-semibold mb-4">Topic</p>
+                <p class="mb-2">Page</p>
+                <p class="mb-2">Page</p>
+                <p class="mb-2">Page</p>
+            </div>
+            <!-- links 2 -->
+            <div class="flex flex-col">
+                <p class="font-semibold mb-4">Topic</p>
+                <p class="mb-2">Page</p>
+                <p class="mb-2">Page</p>
+                <p class="mb-2">Page</p>
+            </div>
+            <!-- link 3 -->
+            <div class="flex flex-col">
+                <p class="font-semibold mb-4">Topic</p>
+                <p class="mb-2">Page</p>
+                <p class="mb-2">Page</p>
+                <p class="mb-2">Page</p>
+            </div>
+        </div>
+     </footer>
+     <!-- footer ends -->
     <script src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>

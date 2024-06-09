@@ -7,13 +7,15 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="../output.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.0/uicons-brands/css/uicons-brands.css'>
+    <link rel="shortcut icon" href="../media/sign.png" type="image/x-icon">
 
     <!-- inter fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 </head>
-<body class="font-inter">
+<body class="font-inter dark:bg-[#161616]">
     <nav class="p-5 bg-white dark:bg-[#161616] dark:text-white md:flex md:items-center md:justify-between">
       <div class="flex justify-between items-center ">
         <span class="text-xl font-bold cursor-pointer">
@@ -25,15 +27,99 @@
         </span>
       </div>
   
-      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[-1] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <div id="nav-menu" class="flex flex-col md:flex md:flex-row md:items-center z-[10] md:z-auto md:static absolute bg-white dark:bg-[#161616] dark:text-white w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
         <a href="projects.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Projects</a>
         <a href="certifications.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Certifications</a>
         <a href="about.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">About</a>
         <a href="contact.html" class="mx-4 my-2 md:my-0 font-medium hover:text-cyan-500 duration-500">Contact</a> 
       </div>
     </nav>
+
+    <!-- contact form starts -->
+    <section class="h-auto text-black dark:text-white">
+      <!-- form container -->
+       <div class="flex flex-col md:flex-row items-center md:justify-evenly my-12 md:my-24">
+        <!-- info -->
+        <div class="flex flex-col justify-center">
+          <h1 class="text-4xl font-bold">Contact Me 🤝</h1>
+          <p class="text-lg">Let's talk.</p>
+          <h3 class="text-xl font-semibold mt-8">Email</h3>
+          <div class="flex mt-2 gap-x-2">
+            <img src="../media/mail.png" class="h-7" alt="">
+            <p>sanchit.pahurkar@gmail.com</p>
+          </div>
+          <div class="flex mt-2 gap-x-2">
+            <img src="../media/mail.png" class="h-7" alt="">
+            <p>pahurkarsm@rknec.edu</p>
+          </div>
+          <h3 class="text-xl font-semibold mt-8">Socials</h3>
+          <div class="my-4 animate-bounce animate-infinite animate-duration-[2000ms] animate-delay-500 animate-ease-in-out">
+            <a href="https://www.instagram.com/sanchit_p23/"><i class="fi fi-brands-instagram px-2 cursor-pointer "></i></a>
+            <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><i class="fi fi-brands-linkedin px-2 cursor-pointer"></i></a>
+            <a href="https://x.com/PahurkarSanchit"><i class="fi fi-brands-twitter px-2 cursor-pointer"></i></a>
+            <a href="https://github.com/sanchitpahurkar"><i class="fi fi-brands-github px-2 cursor-pointer"></i></a>
+        </div>
+        </div>
+        <!-- form -->
+        <form class="flex flex-col" onsubmit="Email(); reset(); return false">
+          <label class="font-semibold up">Name</label>
+          <div class="flex flex-row gap-5 mt-1">
+            <input type="text" class="w-40 md:w-52 h-10 px-3 border bg-white dark:bg-[#161616] border-gray-300 outline-none focus:border-cyan-500 rounded up" placeholder="First Name" id="fname">
+            <input type="text" class="w-40 md:w-52 h-10 px-3 border bg-white dark:bg-[#161616] border-gray-300 outline-none focus:border-cyan-500 rounded up" placeholder="Last Name" id="lname">
+          </div>
+          <label class="font-semibold mt-6 up">Email Address</label>
+          <input type="email" class="mt-1 h-10 px-3 border bg-white dark:bg-[#161616] border-gray-300 outline-none focus:border-cyan-500 rounded up" placeholder="Email" id="email">
+          <label class="font-semibold mt-6 up">Your Message</label>
+          <textarea type="text" class="mt-1 h-40 px-3 py-2 border bg-white dark:bg-[#161616] border-gray-300 outline-none focus:border-cyan-500 rounded up" placeholder="Message" id="msg"></textarea>
+          <button class="rounded font-semibold bg-black text-white dark:bg-white dark:text-black h-10 mt-6 up">Submit</button>
+        </form>
+       </div>
+    </section>
   
-  
+    <!-- footer starts -->
+    <footer class="flex flex-col md:flex-row justify-between pt-5 md:pt-10 bg-white dark:bg-white">
+      <!-- name and socials -->
+       <div class="flex flex-col md:gap-20">
+          <!-- name -->
+          <div class="mx-5 my-4 md:m-4 font-semibold">
+              <p>Sanchit Pahurkar</p>
+          </div>
+          <!-- socials -->
+          <div class="mx-4 mb-8">
+              <a href="https://www.instagram.com/sanchit_p23/"><i class="fi fi-brands-instagram px-2 cursor-pointer"></i></a>
+              <a href="https://www.linkedin.com/in/sanchit-pahurkar/"><i class="fi fi-brands-linkedin px-2 cursor-pointer"></i></a>
+              <a href="https://x.com/PahurkarSanchit"><i class="fi fi-brands-twitter px-2 cursor-pointer"></i></a>
+              <a href="https://github.com/sanchitpahurkar"><i class="fi fi-brands-github px-2 cursor-pointer"></i></a>
+          </div>
+       </div>
+      <!-- links -->
+      <div class="flex flex-row gap-20 mx-8">
+          <!-- links 1 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+          <!-- links 2 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+          <!-- link 3 -->
+          <div class="flex flex-col">
+              <p class="font-semibold mb-4">Topic</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+              <p class="mb-2">Page</p>
+          </div>
+      </div>
+    </footer>
+    <!-- footer ends -->
     <script src="../script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>

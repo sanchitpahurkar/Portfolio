@@ -1051,6 +1051,10 @@ video {
   padding-top: 2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .font-inter {
   font-family: Inter, sans-serif;
 }
@@ -1313,6 +1317,14 @@ video {
 
   .md\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .md\:pr-8 {
+    padding-right: 2rem;
+  }
+
+  .md\:text-left {
+    text-align: left;
   }
 
   .md\:text-7xl {

@@ -18,7 +18,11 @@ module.exports = {
       },
       boxShadow: {
         'custom': '0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1)', // Example custom shadow
-      }
+      },
+      backgroundImage: {
+        'gradient': 'linear-gradient(to left, rgba(255,255,255,0), white)',
+      },
+      
     },
   },
   plugins: [
